@@ -1,0 +1,44 @@
+/* Styles for memory-game page */
+
+.MemoryGame {
+    width: 100%;
+    height: 100%;
+    /* position */
+    position: relative;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 30%;
+    gap: 3rem;
+}
+
+.MemoryGame .heading {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10%;
+}
+
+button.new-game:hover {
+    background: #c23866;
+    color: #fff;
+}
+
+/* card grid */
+
+.MemoryGame .card-grid {
+    width: 100%;
+    /* layout */
+    display: grid;
+    grid-template-columns: repeat(4, var(--card-width));
+    grid-template-rows: repeat(3, var(--card-width));
+    grid-gap: 0.4rem;
+    justify-content: center;
+
+    /* vars */
+    --card-width: 8rem;
+}
